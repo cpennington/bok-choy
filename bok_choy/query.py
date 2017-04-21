@@ -605,5 +605,8 @@ class QueryableQuery(Query):
 
 
 class BrowserQuery(QueryableQuery):
+    """
+    A Query that operates on a WebDriver Browser object.
+    """
     def __init__(self, browser, **kwargs):
         super(BrowserQuery, self).__init__(browser, browser, **kwargs)
